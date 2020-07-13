@@ -1,7 +1,8 @@
 body {
-  margin: 0;
+  margin: auto;
   padding: 0;
   background: #fff;
+  width: 50%;
 }
 
 .box {
@@ -10,26 +11,25 @@ body {
   transform: translateY(-50%);
   font-size: 3em;
   font-family: sans-serif;
-  color: #black;
-  margin-left: 50px;
-  width: calc(100% - 50px);
+  color: #333333;
+  width: 50%;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-.word {
-  display: inline-block;
-  color: grey;
-  width: 160px;
-  position: relative;
-}
 
 .word span {
   position: absolute;
-  bottom: -10px;
+  bottom: 0;
   overflow: hidden;
-  animation: animate 10s linear infinite;
+  animation: animate 10s linear;
   opacity: 0;
-  right: -5px;
+  right: -2px;
+}
+
+.word {
+  display: inline;
+  color: grey;
+  position: relative;
 }
 
 @keyframes animate {
